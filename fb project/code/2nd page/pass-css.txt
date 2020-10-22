@@ -1,0 +1,27 @@
+.header{
+          background-color: #3b5998;
+          height: 70px;
+          color: #ffffff; 
+      }
+.signup{
+	position: relative;
+	bottom: -15px;
+}
+body{
+	background-color: #dfe1ee;
+}
+hr{
+	border-width: 2px;
+}
+.default{
+	height: 85px;
+	width: 100px;
+}
+
+.keep{
+	padding-left: 36px;
+}
+
+#blue{
+	color: #0000ff;
+}

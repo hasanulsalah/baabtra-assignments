@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery slide</title>
+	<style type="text/css">
+		#rectangle{
+			background: rgb(11,126,69);
+			width:200px;
+			height: 80px;
+			position: relative;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+</head>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#rectangle').click(function(){
+	$('#rectangle').animate({
+	'left':"+=40px" 
+	});
+	});
+});
+</script>
+<body>
+<div id="rectangle"></div>
+</body>
+</html>

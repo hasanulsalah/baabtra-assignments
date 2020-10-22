@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		document.write("<h3>Global</h3>");
+		var fruit = "apple";
+		function fruits()
+		{	
+
+			var frui = "apple";
+			document.write(fruit+" inside the function <br /> <br />");
+			
+		}
+		fruits();
+		document.write(fruit+" outsidse the function <br /> <br />");
+		document.write("<h3>Local</h3>");
+		function fruite()
+		{	
+
+			var frui = "apple";
+			document.write(frui+" inside the function <br /> <br />");
+			
+		}
+		fruite();
+		document.write(frui+" outsidse the function <br /> <br />");
+
+	</script>
+</head>
+<body>
+</body>
+</html>

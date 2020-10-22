@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+	img_tracker = "Chrysanthemum";
+	function fn_Change()
+	{
+
+	image = document.getElementById('display');
+	if (img_tracker == "Chrysanthemum") 
+		{
+		image.src = "Tulips.jpg";
+		img_tracker = "Tulips";
+		}
+	else
+		{
+		image.src = "Chrysanthemum.jpg";
+		img_tracker = "Chrysanthemum";
+		}
+
+	}
+</script>
+</head>
+<body>
+<img src="Chrysanthemum.jpg" id="display" onclick="fn_Change()" />
+</body>
+</html>

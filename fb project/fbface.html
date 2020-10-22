@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/success.css">
+</head>
+<style type="text/css">
+
+#search input{ 
+	width:400px;
+}
+.nav{
+	background-color: #3b5998;
+}
+body{
+	background-color: #dfe1ee;
+}
+.side{
+	height: 300px;
+	font-size: 15px;
+}
+#blk{
+	color: black;
+	font-weight: bold;
+}
+img{
+	height: 20px;
+	width: 20px;
+}
+
+.headerdiv{
+	width: 100%;
+}
+.bodynav{
+	background-color: white;
+}
+#user{
+	height: 65px;
+	width: 55px;
+}
+.update{
+	background-color: white;
+	height: 180px;
+}
+.well{
+	height:300px;
+	background-color:white;
+}
+.btn{
+	text-align: right;
+}
+.scnd{
+	margin: 2px;
+}
+
+</style>
+    <script type="text/javascript">
+
+    </script>
+
+<body>
+	<nav class="nav navbar-default">
+		<div class="headerdiv">
+			<div class="row">
+				<div class="col-lg-6 col-lg-push-1">
+					<form class="navbar-form navbar-left" role="search" id="search">
+						<div class="input-group">
+							<input type="text" placeholder="Search Facebook" class="form-control">
+								<span class="glyphicon glyphicon-search form-control-feedback"></span>
+						</div>
+					</form>
+				</div> <!--col-->
+			</div> <!--row-->
+		  </div>	
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-2"> <br><br>
+				<div class="sidebar side">
+					<a href="#"><span class="glyphicon glyphicon-user"></span><span id="blk"> User</span></a> <br> <br>
+					<a href="#"><span class="glyphicon glyphicon-edit"></span><span id="blk">  Edit Profile</span></a>
+				</div>
+			</div>
+			
+			<!-- <div class="row"> -->
+					<div class="col-lg-7"> <br>
+						<ul class="nav nav-tabs bodynav"> 
+							<li class=" col-lg-4">
+								<a data-toggle="tab" href="#status">
+								<img src="edit.png" class="img-responsive"> &nbsp; <b>Update Status </b>
+								</a>
+							</li>
+							<li class="col-lg-4">
+								<a data-toggle="tab" href="#photo">
+								<img src="video.png" class="img-responsive"> &nbsp; <b>Add Photos/Video </b>
+								</a>
+							</li>
+							<li class="col-lg-4">
+								<a data-toggle="tab" href="#notes">
+								<img src="notes.png" class="img-responsive"> &nbsp; <b>Write Notes </b>
+								</a>
+							</li>
+						</ul>
+						<div class="tab-content update">
+							<div class="tab-pane active" id="status">
+								<div class="row">
+									<div class="col-lg-7">
+										&nbsp;<img src="user.jpg" class="img-respoonsive" id="user">&nbsp;<span style="color: grey;"><b>What's on your mind?</b></span>
+									</div>
+								</div>
+							</div>
+					   </div> <!--tab content--><br> 
+					   <div class="row scnd">
+						   	<div class="col-lg-12 well">
+						   		
+						   	</div>
+					   </div>
+					</div> <!--col7-->
+			<!-- </div> row2 -->
+			<div class="row">
+				<div class="col-lg-3"> <br>
+					<div class="well">
+						<div class="dropdown">
+							<button class="btn btn-default btn-block dropdown-toggle" data-toggle="button">Your Adds
+								<span class="caret"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		
+		</div> <!--side row-->
+	</div> <!--container-->
+
+
+</body>
+</html>

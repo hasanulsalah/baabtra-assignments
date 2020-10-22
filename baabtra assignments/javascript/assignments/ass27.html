@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+	function fn_add_details(){
+		fname = document.getElementById('firstName').value;
+		lname = document.getElementById('lastName').value;
+		mail = document.getElementById('emailId').value;
+		document.getElementById('display').innerHTML = "Welcome "+fname+" "+lname+".My Email Id is "+mail;
+		console.log(display);
+		alert("Welcome "+fname+" "+lname+".My Email Id is "+mail);
+	}
+</script>
+</head>
+<body>
+	<form>
+	<label>First Name:</label><input type="text" placeholder="Enter First name" id="firstName"><br><br>
+	<label>Last Name:</label><input type="text" placeholder="Enter Last name" id="lastName"><br><br>
+	<label>Email Id :</label><input type="text" placeholder="Enter Email id" id="emailId"><br><br>
+	<label>Password  :</label><input type="password" placeholder="Enter password" id="inputPassword"><br><br>
+	<button onclick="fn_add_details();">sign_up</button>
+	</form>
+	<p id="display"></p>
+</body>
+</html>

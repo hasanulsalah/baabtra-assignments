@@ -1,0 +1,15 @@
+ .header{
+          background-color: #3b5998;
+          height: 70px;
+          color: #ffffff; 
+      }
+.signup{
+	position: relative;
+	bottom: -15px;
+}
+body{
+	background-color: #dfe1ee;
+}
+.keep{
+	padding-left: 40px;
+}

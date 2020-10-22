@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+	function check_info(){
+		fname = document.forms["regForm"]["name"].value;
+		adres = document.forms["regForm"]['address'].value;
+		email = document.forms["regForm"]['mail'].value;
+		mobno = document.forms["regForm"]['mob'].value;
+		paswd = document.forms["regForm"]['password'].value;
+		paswd1 = document.forms["regForm"]['password1'].value;
+		if (fname == "") {
+		window.alert("Please enter your name.");
+		
+		return false;
+		}
+		if(adres == ""){
+		window.alert("Please enter your Address.");
+	
+		return false;
+		}
+		if (email == "") {
+		window.alert("Please enter a valid email address.");
+
+		return false;
+		}
+		if (email.indexOf("@",0) < 0) {
+		window.alert("Please enter a valid E-mail address.");
+		
+		return false;
+		}
+		if (email.indexOf(".", 0) < 0) {
+		window.alert("Please enter a valid email address.");
+		
+		return false;
+		}
+		if(mobno == ""){
+		window.alert("Please enter your number.");
+	
+		return false;		
+		}
+		if(paswd == ""){
+		window.alert("Please enter your password.");
+		
+		return false;	
+		}
+		if(paswd1 == ""){
+
+		window.alert("Please RE-enter your password.");
+		
+		return false;	
+		}
+		if(paswd1 != paswd){
+
+		window.alert("Please RE-enter your password.");
+		
+		return false;	
+		}
+			return true;
+		}
+</script>
+</head>
+<body>
+	<form name="regForm" action="/abc.php" method="post" onsubmit="return check_info();">
+	<label>name:</label><input type="text" placeholder="Enter Username" name="name"><br><br>
+	<label>personal address:</label><input type="text" placeholder="Enter address" name="address"><br><br>
+	<label>Email id:</label><input type="text" placeholder="Enter mail" name="mail"><br><br>
+	<label>Mobile No:</label><input type="number" placeholder="Enter mobile number" name="mob"><br><br>
+	<label>password:</label><input type="password" placeholder="Enter password" name="password"><br><br>
+	<label>Confirm password:</label><input type="password" placeholder="Re-enter password" name="password1"><br><br>
+	<input type="submit" value="Login" name="Submit">
+	</form>
+</body>
+</html>

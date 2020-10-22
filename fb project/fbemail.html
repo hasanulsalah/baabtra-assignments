@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/mail.css">
+</head>
+<style type="text/css">
+
+ .header{
+          background-color: #3b5998;
+          height: 70px;
+          color: #ffffff; 
+      }
+.signup{
+	position: relative;
+	bottom: -15px;
+}
+body{
+	background-color: #dfe1ee;
+}
+.keep{
+	padding-left: 40px;
+}
+
+</style>
+    <script type="text/javascript">
+
+    </script>
+<body>
+	<div class="container-fluid">
+		<div class="row header">
+			<div class="col-lg-2 col-xs-6 col-lg-offset-2">
+					<img src="logo.png" class="img-responsive">
+			</div> <!--logo -->
+			<div class="col-lg-2">
+				<button class="signup btn btn-success">Sign up</button>
+			</div>	
+		</div> <!--row header-->
+		<div class="row">
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-lg-offset-3">
+				<br> <br> <br><br>
+				<form>
+				<div class="well">
+						<h3>Facebook Login</h3>
+						<hr>
+						<div class="row">
+								<div class="form-group col-lg-12">
+									<label class="col-lg-5 col-lg-push-2 control-label">Email or Phone </label> 
+										<div class="col-lg-5">
+										 <div class="input-group has-error has-feedback">
+											<input type="text" name="login" id="login" class="form-control">
+											<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+										</div> 
+									</div>
+								</div>
+						</div>	
+							<div class="row">
+								<div class="form-group col-lg-12">
+									<label class="col-lg-5 col-lg-push-2 control-label">Password:</label>
+									<div class="col-lg-5">
+										<input type="Password" name="pass" id="pass" class="form-control">
+									</div>
+								</div>
+							</div>
+							<div class="row keep"> 
+								<div class="checkbox col-lg-12 col-lg-push-5">
+										<input type="checkbox" name="check" id="check" checked="checked">Keep me logged in
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12 col-lg-push-5">
+									<input type="submit" name="log" class="btn btn-primary" value="Log In"> &nbsp;or 
+									<span id="blue"><a href="">Sign up for Facebook</a> </span>
+								</div>
+							</div> <br>
+							<div class="row">
+								<div class="col-lg-12 col-lg-push-5">
+									<a href="">Forget your Password?</a>
+								</div>
+							</div>
+						</div><!--well-->
+					</form>
+				</div> <!--col-->
+		</div> <!--row-->
+	</div> <!--container-->
+</body>
+</html>

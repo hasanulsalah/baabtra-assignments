@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+	function check_info(){
+	var grad_checked = document.getElementById('Graduate').checked; 
+	var postgrad_checked = document.getElementById('post-Graduate').checked;
+	if (grad_checked == false && postgrad_checked == false) {
+		document.getElementById("display").innerHTML = "Please Select Your Qualifications ";
+		return false;
+	}
+
+	else{
+		return true;
+	}
+		}
+</script>
+</head>
+<body>
+	<h3>Radio Button Validation</h3>
+	<form name="regForm" action="/abc.php" method="post" onsubmit="return check_info();">
+	<label>Qualification:</label><input type="checkbox" name="Qualification" value="Graduate" id="Graduate">Graduate 
+	<input type="checkbox" name="Qualification" value="post-Graduate" id="post-Graduate">Post Graduate<br>
+	<input type="submit" value="Submit" name="Submit">
+	<p id="display"></p>
+	</form>
+</body>
+</html>

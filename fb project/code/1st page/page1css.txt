@@ -1,0 +1,64 @@
+body{
+background-color: #dfe1ee;
+}
+ 
+.header{
+          background-color: #3b5998;
+          height: 80px;
+          color: #ffffff;
+      }
+.logo{
+ padding-left: 100px;
+ padding-top: 12px;
+}
+
+.log{
+padding-top: 25px;
+    }
+
+  a{
+  color: white;
+  font-size: 13px;
+
+  }
+  a:hover{
+  color: white;
+  }
+
+  .connect{
+         
+          font-weight: bold;
+          font-size: 25px;
+          margin-left: 30px;
+          margin-right: 50px;
+        }
+ .cimg{
+         width: 560px;
+         margin-left: 40px;
+         margin-top: 30px;
+         background-image: linear-gradient(to top,#bfc4dc,#dfe1ee);
+        }      
+
+.create{
+          font-size: 25px;
+          font-weight: bold;
+          }      
+ .free{
+          font-weight: bold;
+          font-size: 18px;
+        }          
+
+.dob{
+       
+          color: blue;
+        }      
+
+#blue{
+          color: blue;
+        }
+
+
+#page{
+         
+          color:#898b8c;
+        }        

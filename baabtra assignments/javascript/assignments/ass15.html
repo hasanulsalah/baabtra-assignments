@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+	const students = [];
+
+
+	function fn_add_student() {
+	
+		const studentObj = {
+			name: studentName.value,
+			marks: [
+				{ subName: 'English', mark: Number(mrkEng.value) },
+				{ subName: 'Science', mark: Number(mrkSci.value) },
+				{ subName: 'Maths', mark: Number(mrkMth.value) }
+			],
+			totalMark: Number(mrkEng.value) + Number(mrkSci.value) + Number(mrkMth.value)
+		};
+
+		students.push(studentObj);
+
+		students.sort((a, b) => parseFloat(a.totalMark) - parseFloat(b.totalMark));
+		students.reverse()
+		
+		console.log(students)
+		tblBody.innerHTML = '';
+
+		for (student of students) {
+			const newRow = tblBody.insertRow();
+			const studName = newRow.insertCell(0)
+			const mrkEnglish = newRow.insertCell(1)
+			const mrkScience = newRow.insertCell(2)
+			const mrkMaths = newRow.insertCell(3)
+			const totalMrk = newRow.insertCell(4)
+
+			studName.innerHTML = student.name;
+			mrkEnglish.innerHTML = student.marks[0].mark;
+			mrkScience.innerHTML = student.marks[1].mark;
+			mrkMaths.innerHTML = student.marks[2].mark;
+			totalMrk.innerHTML = student.totalMark;
+		}
+
+	}
+
+	</script>
+</head>
+<body>
+
+	<input type="text" placeholder="Enter student name" id="studentName">
+	<input type="number" placeholder="Enter mark in English" id="mrkEng">
+	<input type="number" placeholder="Enter mark in Science" id="mrkSci">
+	<input type="number" placeholder="Enter mark in Maths" id="mrkMth">
+	<button onclick="fn_add_student()">Add student</button>
+
+	<table border="3" cellspacing="4" cellpadding="3">
+		<tr>
+			<th>Student Name</th>
+			<th>English</th>
+			<th>Science</th>
+			<th>Maths</th>
+			<th>Total</th>
+		</tr>
+		<tbody id="tblBody"></tbody>
+	</table>
+	<br>
+	<p id="msg"></p>
+</body>
+</html>

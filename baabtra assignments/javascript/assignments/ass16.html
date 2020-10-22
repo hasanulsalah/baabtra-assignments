@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		const students = [];
+
+
+	function fn_add_student() {
+
+		const studentObj = {
+			name: studentName.value,
+			marks:[
+			 	{mark: Number(sub1.value)},
+			 	{mark: Number(sub2.value)},
+			 	{mark: Number(sub3.value)},
+			 	{mark: Number(sub4.value)},
+			 	{mark: Number(sub5.value)}
+
+			 ],
+			totalMark: Number(sub1.value) + Number(sub2.value) + Number(sub3.value) + Number(sub4.value) + Number(sub5.value),
+			percentage:((Number(sub1.value) + Number(sub2.value) + Number(sub3.value) + Number(sub4.value) + Number(sub5.value))/500)*100
+		};
+
+		students.push(studentObj);
+
+		tblBody.innerHTML = '';
+
+		for (student of students) {
+			const newRow = tblBody.insertRow();
+			const studName = newRow.insertCell(0);
+			const mrkSub1 = newRow.insertCell(1);
+			const mrkSub2 = newRow.insertCell(2);
+			const mrkSub3 = newRow.insertCell(3);
+			const mrkSub4 = newRow.insertCell(4);
+			const mrkSub5 = newRow.insertCell(5);
+			const totalMrk = newRow.insertCell(6)
+			const percent = newRow.insertCell();
+
+			studName.innerHTML = student.name;
+			mrkSub1.innerHTML = student.marks[0].mark;
+			mrkSub2.innerHTML = student.marks[1].mark;
+			mrkSub3.innerHTML = student.marks[2].mark;
+			mrkSub4.innerHTML = student.marks[3].mark;
+			mrkSub5.innerHTML = student.marks[4].mark;
+			totalMrk.innerHTML = student.totalMark;
+			percent.innerHTML = student.percentage;
+
+
+
+			}	
+
+			if (studentObj.percentage > 60) {
+
+				li = document.createElement('li');
+				pass = "student " + studentObj.name +" has passed";
+				li.innerHTML = pass;
+				document.getElementById('demo').appendChild(li);
+
+											}
+				
+		}
+	
+	</script>
+</head>
+<body>
+<input type="text" placeholder="Enter student name" id="studentName">
+	<input type="number" placeholder="Enter mark in sub1" id="sub1">
+	<input type="number" placeholder="Enter mark in sub2" id="sub2">
+	<input type="number" placeholder="Enter mark in sub3" id="sub3">
+	<input type="number" placeholder="Enter mark in sub4" id="sub4">
+	<input type="number" placeholder="Enter mark in sub5" id="sub5">
+	<button onclick="fn_add_student()">Add student</button>
+	<br><br>
+	<table border="3" cellspacing="4" cellpadding="3">
+	<tr>
+			<th>Student Name</th>
+			<th>Subject1</th>
+			<th>Subject2</th>
+			<th>Subject3</th>
+			<th>Subject4</th>
+			<th>Subject5</th>
+			<th>Total Mark</th>
+			<th>Percentage</th>
+		</tr>
+		<tbody id="tblBody"></tbody>
+	</table>
+	<br>
+	<ul id="demo"></ul>
+</body>
+</html>

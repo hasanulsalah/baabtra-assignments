@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+	<style type="text/css">\
+	.div1{background-image: linear-gradient(to top,#cceeff,#e6f9ff,#ffffff);
+		height: 100%;
+		width: 100%;
+	}
+	h1{
+		font-size: 50px;
+	}
+
+	tr,td{padding: 5px;
+		height: 30px;
+		width: 100px;
+	}
+	input{
+		height: 30px;
+		width: 250px;
+		border:1px solid #adebeb;
+		color: #d6d6c2;
+		font-size: 20px;
+	}
+	.radio{
+		font-weight: bold;
+		height: 15px;
+		width: 30px;
+	}
+	#button{
+	height: 40px;
+	width: 270px;
+	color: white;
+	text-align: center;
+	background-image: linear-gradient(to top,#006600,#009900,#00e600);
+	}
+	#moveleft2{
+		clear: left;
+		float: left;
+	}
+		.para1{
+		font-size:20px;
+		text-align: left; 
+		font-weight: bold;
+
+	}
+	#para2{
+		font-size:15px;
+		text-align: left; 
+		color: #6b6b47;
+	}
+	#para3{
+		font-size:20px;
+		text-align: left; 
+		color: #6b6b47;
+	}
+	.col{
+		height: 30px;
+		width: 530px;
+	}
+
+	</style>
+<body>
+<h1>Create an account</h1>
+<p class="para1" >it's free and always will be.</p>
+<form action="/action_page.php" id="birthday">
+<table>
+<tr>
+	<td ><input type="text" name="first" value="First name"></td>
+	<td ><input type="text" name="sur" value="Surname"></td>
+</tr>
+<tr>
+	<td colspan="2"><input class="col" type="text" name="number" value="Mobile number or email number"></td>
+</tr>
+<tr>
+	<td colspan="2"><input class="col" type="text" name="number" value="New password"></td>
+</tr>
+<tr>
+	<td><p class="para1">Birthday</p></td>
+</tr>
+<tr>
+	<td>
+	<select name="DAY"  form="birthday">
+		<option>Day</option>
+  </select>
+	<select  name="month" form="birthday">
+	<option value="month">MONTH</option>
+  </select>
+	<select name="year"  form="birthday">
+	<option value="year">YEAR</option>
+</select></td>
+
+  <td id="moveleft2"><a href="">Why do i need to provide my date of birth?</a></td>
+</tr>
+<tr>
+	<td ><input type="radio" class="radio" name="Gender" value="Female">Female
+		<input type="radio" class="radio" name="Gender" value="Male">Male</td>
+</tr>
+<tr>
+<td colspan="2"><p id="para2">By clicking create an account,you agree to our<span><a href="">Terms</a></span> and confirm that you haveread our <span><a href="">Data Policy</a></span> including our<span><a href=""> cookie using policy</a></span> .You may SMS message notification from Facebook and can opt out any time.</p></td>
+</tr>
+<tr>	
+	<td ><input id="button" type="button" name="but" value="Create an account "></td>
+</tr>
+<tr>
+	<td colspan="4"><p id="para3"><span><a href="">Create a Page</a></span>for a celebrity,band or business</p></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

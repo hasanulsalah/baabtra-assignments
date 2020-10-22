@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+	function fn_check(){
+		fname = document.getElementById('name').value;
+		paswd = document.getElementById('password').value;
+		if ((fname == "admin") && (paswd == "admin123")) {
+			document.write("Login Successful");
+		}else{
+			document.write("login Unsuccessful");
+		}
+	}
+</script>
+</head>
+<body>
+	<form action="/abc.php" method="get">
+	<label>Username:</label><input type="text" placeholder="Enter Username" id="name" value="admin">
+	<label>password:</label><input type="password" placeholder="Enter password" id="password" value="admin123">
+	<input type="submit" value="Login" onclick="fn_check();">
+	</form>
+</body>
+</html>
